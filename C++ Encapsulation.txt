@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class User{
+    private:
+    int password;
+    
+    public:
+    //setter
+    void setUser(int x){
+        password = x;
+        }
+        //getter
+        int getUser(){
+         return password;   
+        }
+};
+
+int main() {
+    User Karyawan01;
+    Karyawan01.setUser(123456);
+    cout << Karyawan01.getUser();
+    return 0;
+    
+}
